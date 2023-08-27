@@ -1,0 +1,104 @@
+
+<div class="row justify-content-center">
+
+<div class="col-lg-10 ml-2 p-5 bg-coloring">
+  <div class="row justify-content-center ">
+    <div class="col-lg-5">
+      <div class="card p-3">
+        <p>Manga Count: {{mangaLength}}</p>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="card p-3">
+        <p>Types Count: {{typeLength}}</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card p-3">
+        <p>users Types: {{usersLength}}</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <!-- top news -->
+  <!-- <h2 class="mt-2">Top Manga</h2> -->
+  <!-- <hr /> -->
+  <app-topmanga></app-topmanga>
+  <!-- <div class="row justify-content-center mt-4">
+    <div class="col-md-4">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <img src="../images/aot.jpg" class="w-100 heih" alt="" />
+          <p>lorem</p>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+  <!-- top authors -->
+  <!-- <h2 class="mt-2">Top Vendors</h2>
+  <hr />
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h3>Author Name : Jonas</h3>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <h2 class="mt-4">Special Orders
+  </h2>
+
+  <hr />
+  <div id="special-orders">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>Email</th>
+          <th>Special Order</th>
+          <th>
+            <button (click)="removeAllSpecial()">Remove All</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="mt-4"> Orders
+  </h2>
+  <button (click)="removeAll()">Remove All</button>
+
+  <div id="orders">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Email</th>
+          <th>Order</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of ordersArr">
+          <td>{{i.orderItems[0]}}</td>
+          <td>{{i.payment}}</td>
+          <td>{{i.Address}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</div>
