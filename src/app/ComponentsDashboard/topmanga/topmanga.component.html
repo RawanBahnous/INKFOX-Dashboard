@@ -1,0 +1,16 @@
+
+ <!-- top Manga -->
+  <h2 class="mt-2">Top Manga</h2>
+  <hr />
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-4" *ngFor="let m of mangaLst">
+      <div class="card">
+        <button routerLink="/mangadetails/{{m.id}}">
+        <img src="{{m.imageURL}}" alt=" {{m.Title}}">
+        </button>
+        <div class="card-header">
+          <h3>Manga Name : {{m.Title}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>

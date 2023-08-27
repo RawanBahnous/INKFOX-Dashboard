@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthusersService } from 'src/app/Services/authusers.service';
-import { DataserviceService } from 'src/app/Services/dataservice.service';
-import { OrdersService } from 'src/app/Services/orders.service';
+import { AuthusersService } from 'src/Services/authusers.service';
+import { DataserviceService } from 'src/Services/dataservice.service';
+import { OrdersService } from 'src/Services/orders.service';
 
 @Component({
   selector: 'app-dashboard',

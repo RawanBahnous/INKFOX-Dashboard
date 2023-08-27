@@ -1,0 +1,13 @@
+
+ <!-- top Types -->
+ <h2 class="mt-2">Top Types</h2>
+ <hr />
+ <div class="row justify-content-center mt-4">
+   <div class="col-md-4" *ngFor="let t of typesLst;let i = index">
+     <div class="card">
+       <div class="card-header">
+         <h3>Type {{i+1}} Name  : {{t.typename}}</h3>
+       </div>
+     </div>
+   </div>
+ </div>
